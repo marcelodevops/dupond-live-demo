@@ -1,0 +1,11 @@
+{
+  "name": "dupond-live-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Minimal Node.js application for Dupond live demonstration",
+  "scripts": {
+    "test": "node --test",
+    "test:baseline": "node --test test/math.test.js",
+    "test:acceptance": "node --test test/percentageOf.test.js"
+  }
+}
