@@ -14,3 +14,13 @@ export function clamp(value, min, max) {
   }
   return Math.min(Math.max(value, min), max);
 }
+
+export function percentageOf(value, percentage) {
+  if (typeof value !== 'number' || typeof percentage !== 'number') {
+    throw new TypeError('percentageOf requires number arguments');
+  }
+  if (!Number.isFinite(value) || !Number.isFinite(percentage)) {
+    throw new TypeError('percentageOf arguments must be finite numbers');
+  }
+  return (value * percentage) / 100;
+}
